@@ -1,0 +1,5 @@
+.idea
+vendor
+src/Tracking/Repository/Databases/*
+junit.xml
+clover.xml

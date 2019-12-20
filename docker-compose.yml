@@ -1,0 +1,10 @@
+version: '3'
+services:
+  timetracker:
+    image: timertracker:latest
+    build:
+        context: .
+    volumes:
+      - .:/var/www/html
+    ports:
+        - 81:80

@@ -1,0 +1,29 @@
+{
+  "name": "TimeTracker",
+  "license": "proprietary",
+  "type": "project",
+  "description": "Time Tracking Service",
+  "authors": [
+    {
+      "name": "Alexej Beirith",
+      "email": "alexej.beirith@arvato.com",
+      "role": "Software Engineer"
+    }
+  ],
+  "config": {
+    "github-oauth": {
+      "github.com": "eebde61363e83c74286f8855b8d331b38ef861a0"
+    }
+  },
+  "autoload": {
+    "psr-4": { "Tracking\\": "src/Tracking" }
+  },
+  "require": {
+    "php": ">=7.0",
+    "silex/silex": "~2.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "6.3",
+    "symfony/phpunit-bridge": "^3.0"
+  }
+}

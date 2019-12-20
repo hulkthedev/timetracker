@@ -1,0 +1,216 @@
+<div class="modal fade" id="modal-working-start" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Start Working</h4>
+            </div>
+
+            <div class="modal-body">
+                <form class="form-inline">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-default wide-dropdown align-left" data-toggle="dropdown">
+                            <span class="glyphicon glyphicon-time"></span> Working
+                        </button>
+                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                            <span class="caret"></span>
+                        </button>
+
+                        <ul class="dropdown-menu wide-dropdown align-left">
+                            <li><a data-working-mode="1"><span class="glyphicon glyphicon-time"></span> Working</a></li>
+                            <li><a data-working-mode="2"><span class="glyphicon glyphicon-bed"></span> Sick</a></li>
+                            <li><a data-working-mode="3"><span class="glyphicon glyphicon-sunglasses"></span> Vacation</a></li>
+                            <li><a data-working-mode="4"><span class="glyphicon glyphicon-education"></span> Holiday</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="input-group spacing-s date">
+                        <input class="form-control datepicker wide-input align-right" name="workingDate" data-date-format="dd.mm.yyyy" readonly />
+                        <div class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></div>
+
+                        <input class="form-control align-right" name="workingTime" maxlength="5" />
+                        <div class="input-group-addon"><span class="glyphicon glyphicon-time"></span></div>
+                    </div>
+
+                    <div class="input-group spacing-s datetime hidden">
+                        <input class="form-control datepicker wide-input" name="from" data-date-format="dd.mm.yyyy" readonly />
+                        <div class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></div>
+
+                        <input class="form-control datepicker wide-input" name="to" data-date-format="dd.mm.yyyy" readonly />
+                        <div class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></div>
+                    </div>
+
+                    <input type="hidden" name="workingMode" value="1" />
+                </form>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span></button>
+                <button type="button" class="btn btn-primary" name="save"><span class="glyphicon glyphicon-floppy-save"></span> Save</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modal-working-end" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content">
+            <div class="modal-header"><h4 class="modal-title">End Working</h4></div>
+
+            <div class="modal-body">
+                <form class="form-inline">
+                    <div class="input-group">
+                        <input class="form-control wide-input align-right" name="workingDate" readonly />
+                        <div class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></div>
+
+                        <input class="form-control align-right" name="workingTime" maxlength="5" />
+                        <div class="input-group-addon"><span class="glyphicon glyphicon-time"></span></div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span></button>
+                <button type="button" class="btn btn-primary" name="save"><span class="glyphicon glyphicon-floppy-save"></span> Save</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modal-working-edit" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content">
+            <div class="modal-header"><h4 class="modal-title">Edit</h4></div>
+
+            <div class="modal-body">
+                <form class="form-horizontal">
+                    <div class="input-group">
+                        <input class="form-control wide-input align-right" name="workingDate" readonly />
+                        <div class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></div>
+
+                        <input class="form-control align-right" name="workingDifference" maxlength="5" readonly />
+                        <div class="input-group-addon balanced-status"><span class="glyphicon glyphicon-time"></span></div>
+                    </div>
+
+                    <div class="input-group">
+                        <input class="form-control wide-input align-right" name="workingStartTime" maxlength="5" />
+                        <div class="input-group-addon"><span class="glyphicon glyphicon-play"></span></div>
+
+                        <input class="form-control align-right" name="workingEndTime" maxlength="5" />
+                        <div class="input-group-addon"><span class="glyphicon glyphicon-stop"></span></div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span></button>
+                <button type="button" class="btn btn-primary" name="save"><span class="glyphicon glyphicon-floppy-save"></span> Save</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modal-time-account" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content">
+            <div class="modal-header"><h4 class="modal-title">Time Account</h4></div>
+
+            <div class="modal-body">
+                <form class="form-inline">
+                    <blockquote>
+                        <h6>Available overtime: <span><!-- filled by js--></span></h6>
+                    </blockquote>
+
+                    <div class="btn-group spacing-s">
+                        <button type="button" class="btn btn-default wide-dropdown align-left" data-toggle="dropdown">
+                            <span class="glyphicon glyphicon-time"></span> Full day
+                        </button>
+                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                            <span class="caret"></span>
+                        </button>
+
+                        <ul class="dropdown-menu wide-dropdown align-left">
+                            <li><a data-overtime-value="full"><span class="glyphicon glyphicon-time"></span> Full day</a></li>
+                            <li><a data-overtime-value="half"><span class="glyphicon glyphicon-time"></span> Half day</a></li>
+                            <li><a data-overtime-value="manual"><span class="glyphicon glyphicon-calendar"></span> Manual</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="input-group spacing-s overtime-manual hidden">
+                        <input class="form-control wide-input align-right datepicker" name="overtimeDate" data-date-format="dd.mm.yyyy" readonly />
+                        <div class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></div>
+
+                        <input class="form-control align-right" name="overtimeTime" maxlength="5" value="00:00" />
+                        <div class="input-group-addon"><span class="glyphicon glyphicon-time"></span></div>
+                    </div>
+
+                    <input type="hidden" name="overtimeValue" value="full" />
+                </form>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span></button>
+                <button type="button" class="btn btn-primary" name="save"><span class="glyphicon glyphicon-floppy-save"></span> Save</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modal-config" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title"><span class="glyphicon glyphicon-cog"></span> Configuration</h4>
+            </div>
+
+            <div class="modal-body">
+                <form>
+                    <div class="input-group">
+                        <span class="input-group-addon">Break time / day >6h:</span>
+                        <input class="form-control align-right" name="breakTimePerDay1" placeholder="00:30"  />
+                        <div class="input-group-addon"><span class="glyphicon glyphicon-time"></span></div>
+                    </div>
+
+                    <div class="input-group spacing-s">
+                        <span class="input-group-addon">Break time / day <6h:</span>
+                        <input class="form-control align-right" name="breakTimePerDay2" placeholder="00:00"  />
+                        <div class="input-group-addon"><span class="glyphicon glyphicon-time"></span></div>
+                    </div>
+
+                    <div class="input-group spacing-s">
+                        <span class="input-group-addon">Working time / day:</span>
+                        <input class="form-control align-right" name="workingTimePerDay" placeholder="08:00"  />
+                        <div class="input-group-addon"><span class="glyphicon glyphicon-time"></span></div>
+                    </div>
+
+                    <div class="input-group spacing-s">
+                        <span class="input-group-addon">Vacation days / year:</span>
+                        <input class="form-control align-right" name="vacationDaysPerYear" placeholder="30"  />
+                        <div class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span></button>
+                <button type="button" class="btn btn-primary" name="save"><span class="glyphicon glyphicon-floppy-save"></span> Save</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modal-message" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title"><!-- filled by js --></h4>
+            </div>
+
+            <div class="modal-body"><!-- filled by js --></div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span></button>
+            </div>
+        </div>
+    </div>
+</div>
