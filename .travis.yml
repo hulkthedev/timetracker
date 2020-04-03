@@ -11,7 +11,7 @@ addons:
   sonarcloud:
     organization: "hulkthedev"
     token:
-      secure: SONAR_TOKEN
+      secure: $SONAR_TOKEN
 git:
   depth: false
 
@@ -20,5 +20,7 @@ before_script:
   - travis_retry composer update ${COMPOSER_FLAGS} --no-interaction --prefer-source
 
 script:
+  - echo "$SONAR_TOKEN"
+  - echo "$SONAR_PROJECT_KEY"
   - phpunit -c tests/unit --coverage-clover=coverage-report.clover --log-junit=test-report.xml
-  - sonar-scanner -X -Dsonar.projectKey=SONAR_PROJECT_KEY -Dsonar.login=SONAR_TOKEN
+  - sonar-scanner -X -Dsonar.projectKey=$SONAR_PROJECT_KEY -Dsonar.login=$SONAR_TOKEN
