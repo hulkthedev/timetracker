@@ -4,6 +4,7 @@ php:
 
 addons:
   sonarcloud:
+    organization: "hulkthedev"
     token:
       secure: $SONAR_TOKEN
 
@@ -13,4 +14,4 @@ before_script:
 
 script:
   - phpunit --configuration tests/unit  --coverage-clover=clover.xml --log-junit junit.xml
-  - ls -la
+  - sonar-scanner
