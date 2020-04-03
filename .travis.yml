@@ -2,5 +2,9 @@ language: php
 php:
   - 7.2
 
+before_script:
+  - travis_retry composer self-update
+  - travis_retry composer update ${COMPOSER_FLAGS} --no-interaction --prefer-source
+
 script:
   - phpunit --configuration tests/unit  --coverage-clover=clover.xml --log-junit junit.xml
