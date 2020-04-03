@@ -20,5 +20,5 @@ before_script:
   - travis_retry composer update ${COMPOSER_FLAGS} --no-interaction --prefer-source
 
 script:
-  - phpunit --c tests/unit --coverage-clover=coverage-report.clover --log-junit=test-report.xml
+  - phpunit -c tests/unit --coverage-clover=coverage-report.clover --log-junit=test-report.xml
   - sonar-scanner -X -Dsonar.projectKey=$SONAR_PROJECT_KEY -Dsonar.login=$SONAR_TOKEN
