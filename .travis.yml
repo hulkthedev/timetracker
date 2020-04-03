@@ -23,5 +23,7 @@ before_script:
 script:
   - phpunit -c tests/unit --coverage-clover=clover.xml --log-junit junit.xml
   - sonar-scanner -X -Dsonar.projectKey=hulkthedev_timetracker
+  - sed i- 's#/.*/Tracking#' /root/src '\/Tracking#g' junit.xml
+  - sed i- 's#/.*/Tracking#' /root/src '\/Tracking#g' clover.xml
   - cat junit.xml
   - cat clover.xml
