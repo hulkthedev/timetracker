@@ -4,5 +4,4 @@ LABEL maintainer="fatal.error.27@gmail.com"
 
 COPY . /var/www/html
 
-RUN usermod -u 1000 www-data \
-    && chown -R www-data:www-data /var/www/html
+RUN chown -R www-data:www-data /var/www/html
