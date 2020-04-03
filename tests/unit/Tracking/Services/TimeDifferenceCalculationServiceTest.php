@@ -6,7 +6,7 @@ use PHPUnit\Framework\TestCase;
 use Tracking\Dtos\ConfigDtoStub;
 
 /**
- * @author  Alexej Beirith <alexej.beirith@arvato.com>
+ * @author  <fatal.error.27@gmail.com>
  */
 class TimeDifferenceCalculationServiceTest extends TestCase
 {
@@ -24,7 +24,6 @@ class TimeDifferenceCalculationServiceTest extends TestCase
 
     /**
      * @dataProvider calculationDataProvider
-     *
      * @param string    $date
      * @param string    $startTime
      * @param string    $endTime

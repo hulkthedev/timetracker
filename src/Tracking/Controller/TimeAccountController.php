@@ -14,7 +14,7 @@ use Tracking\Usecase\TimeAccount\GetTimeAccountInteractor;
 use Tracking\Usecase\TimeAccount\AddOverTimeInteractor;
 
 /**
- * @author Alexej Beirith <alexej.beirith@arvato.com>
+ * @author <fatal.error.27@gmail.com>
  */
 class TimeAccountController
 {
@@ -50,7 +50,6 @@ class TimeAccountController
 
     /**
      * @param Request $request
-     *
      * @return JsonResponse
      */
     public function add(Request $request): JsonResponse

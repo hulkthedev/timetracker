@@ -13,7 +13,7 @@ use  Tracking\Usecase\Recalculation\RecalculateTimeDifferenceInteractor;
 use Tracking\Usecase\Recalculation\RecalculationBasicResponse;
 
 /**
- * @author Alexej Beirith <alexej.beirith@arvato.com>
+ * @author <fatal.error.27@gmail.com>
  */
 class RecalculationController
 {
@@ -31,7 +31,6 @@ class RecalculationController
 
     /**
      * @param Request $request
-     *
      * @return JsonResponse
      */
     public function recalculateTimeDifferenceInRealTime(Request $request): JsonResponse
@@ -69,7 +68,6 @@ class RecalculationController
 
     /**
      * @param RecalculationBasicResponse $response
-     *
      * @return JsonResponse
      */
     private function getResponse(RecalculationBasicResponse $response): JsonResponse

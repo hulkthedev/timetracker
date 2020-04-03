@@ -8,13 +8,12 @@ use Tracking\Services\TimeDifferenceCalculationService;
 use Tracking\Usecase\ResultCodes;
 
 /**
- * @author  Alexej Beirith <alexej.beirith@arvato.com>
+ * @author  <fatal.error.27@gmail.com>
  */
 class UpdateWorkingDayInteractor extends WorkingBasic
 {
     /**
      * @param Request $request
-     *
      * @return WorkingBasicResponse
      */
     public function execute(Request $request): WorkingBasicResponse
@@ -37,7 +36,6 @@ class UpdateWorkingDayInteractor extends WorkingBasic
 
     /**
      * @param Request $request
-     *
      * @throws InvalidArgumentException
      */
     private function validateRequest(Request $request): void
@@ -49,7 +47,6 @@ class UpdateWorkingDayInteractor extends WorkingBasic
 
     /**
      * @param Request $request
-     *
      * @return array
      */
     private function getParamsFromRequest(Request $request): array

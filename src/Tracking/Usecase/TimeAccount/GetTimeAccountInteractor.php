@@ -9,7 +9,7 @@ use Tracking\Services\TimeCalculationService;
 use Tracking\Usecase\ResultCodes;
 
 /**
- * @author Alexej Beirith <alexej.beirith@arvato.com>
+ * @author <fatal.error.27@gmail.com>
  */
 class GetTimeAccountInteractor
 {
@@ -21,7 +21,7 @@ class GetTimeAccountInteractor
 
     /**
      * @param TimeAccountRepository $timeAccountRepository
-     * @param ConfigRepository      $configRepository
+     * @param ConfigRepository $configRepository
      */
     public function __construct(TimeAccountRepository $timeAccountRepository, ConfigRepository $configRepository)
     {
@@ -48,7 +48,6 @@ class GetTimeAccountInteractor
 
     /**
      * @param TimeAccountDto $timeAccountDto
-     *
      * @return TimeAccountDto
      */
     private function calculateTimeAccount(TimeAccountDto $timeAccountDto): TimeAccountDto

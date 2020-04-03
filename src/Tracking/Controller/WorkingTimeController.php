@@ -16,7 +16,7 @@ use Tracking\Usecase\Working\UpdateWorkingDayInteractor;
 use Tracking\Usecase\Working\WorkingBasicResponse;
 
 /**
- * @author Alexej Beirith <alexej.beirith@arvato.com>
+ * @author <fatal.error.27@gmail.com>
  */
 class WorkingTimeController
 {
@@ -39,52 +39,44 @@ class WorkingTimeController
     {
         $interactor = new GetWorkingListInteractor($this->workingTimeRepository, $this->configRepository);
         $response = $interactor->execute();
-
         return $this->getResponse($response);
     }
 
     /**
      * @param Request $request
-     *
      * @return JsonResponse
      */
     public function start(Request $request): JsonResponse
     {
         $interactor = new StartWorkingInteractor($this->workingTimeRepository, $this->configRepository);
         $response = $interactor->execute($request);
-
         return $this->getResponse($response);
     }
 
     /**
      * @param Request $request
-     *
      * @return JsonResponse
      */
     public function end(Request $request): JsonResponse
     {
         $interactor = new EndWorkingInteractor($this->workingTimeRepository, $this->configRepository);
         $response = $interactor->execute($request);
-
         return $this->getResponse($response);
     }
 
     /**
      * @param Request $request
-     *
      * @return JsonResponse
      */
     public function update(Request $request): JsonResponse
     {
         $interactor = new UpdateWorkingDayInteractor($this->workingTimeRepository, $this->configRepository);
         $response = $interactor->execute($request);
-
         return $this->getResponse($response);
     }
 
     /**
      * @param Request $request
-     *
      * @return JsonResponse
      */
     public function get(Request $request): JsonResponse
@@ -100,7 +92,6 @@ class WorkingTimeController
 
     /**
      * @param WorkingBasicResponse $response
-     *
      * @return JsonResponse
      */
     private function getResponse(WorkingBasicResponse $response): JsonResponse

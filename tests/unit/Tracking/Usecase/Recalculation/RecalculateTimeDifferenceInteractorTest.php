@@ -9,7 +9,7 @@ use Tracking\Repository\WorkingTimeInMemoryRepository;
 use Tracking\Usecase\ResultCodes;
 
 /**
- * @author Alexej Beirith <alexej.beirith@arvato.com>
+ * @author <fatal.error.27@gmail.com>
  */
 class RecalculateTimeDifferenceInteractorTest extends TestCase
 {
@@ -37,7 +37,6 @@ class RecalculateTimeDifferenceInteractorTest extends TestCase
 
     /**
      * @dataProvider exceptionDataProvider
-     *
      * @param \Throwable    $exception
      * @param int           $expectedErrorCode
      */

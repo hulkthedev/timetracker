@@ -10,13 +10,12 @@ use Tracking\Repository\WorkingModes;
 use Tracking\Usecase\ResultCodes;
 
 /**
- * @author  Alexej Beirith <alexej.beirith@arvato.com>
+ * @author  <fatal.error.27@gmail.com>
  */
 class StartWorkingInteractor extends WorkingBasic
 {
     /**
      * @param Request $request
-     *
      * @return WorkingBasicResponse
      */
     public function execute(Request $request): WorkingBasicResponse
@@ -42,7 +41,6 @@ class StartWorkingInteractor extends WorkingBasic
 
     /**
      * @param Request $request
-     *
      * @throws InvalidArgumentException
      */
     private function validateRequest(Request $request): void
@@ -56,7 +54,6 @@ class StartWorkingInteractor extends WorkingBasic
 
     /**
      * @param Request $request
-     *
      * @throws InvalidArgumentException
      */
     private function validateDateTimeRequest(Request $request): void
@@ -68,7 +65,6 @@ class StartWorkingInteractor extends WorkingBasic
 
     /**
      * @param Request $request
-     *
      * @throws InvalidArgumentException
      */
     private function validateDateOnlyRequest(Request $request): void
@@ -80,9 +76,7 @@ class StartWorkingInteractor extends WorkingBasic
 
     /**
      * @param Request $request
-     *
      * @return array
-     *
      * @throws Exception
      */
     private function startNonWorking(Request $request): array
@@ -95,7 +89,6 @@ class StartWorkingInteractor extends WorkingBasic
 
     /**
      * @param Request $request
-     *
      * @return array
      */
     private function startWorking(Request $request): array
@@ -114,9 +107,7 @@ class StartWorkingInteractor extends WorkingBasic
     /**
      * @param string $from
      * @param string $to
-     *
      * @return array
-     *
      * @throws Exception
      */
     private function getRangeOfDays(string $from, string $to): array

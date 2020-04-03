@@ -7,7 +7,7 @@ use SQLite3;
 use Tracking\Dtos\ConfigDto;
 
 /**
- * @author  Alexej Beirith <alexej.beirith@arvato.com>
+ * @author  <fatal.error.27@gmail.com>
  */
 class ConfigSQLiteRepository extends SQLiteRepositoryAbstract implements ConfigRepository
 {
@@ -67,9 +67,7 @@ class ConfigSQLiteRepository extends SQLiteRepositoryAbstract implements ConfigR
 
     /**
      * @param array $data
-     *
      * @return ConfigDto
-     *
      * @throws PDOException
      */
     public function update(array $data): ConfigDto
@@ -94,7 +92,6 @@ class ConfigSQLiteRepository extends SQLiteRepositoryAbstract implements ConfigR
 
     /**
      * @return ConfigDto
-     *
      * @throws PDOException
      */
     public function getAll(): ConfigDto
@@ -121,7 +118,6 @@ class ConfigSQLiteRepository extends SQLiteRepositoryAbstract implements ConfigR
 
     /**
      * @param array $config
-     *
      * @return ConfigDto
      */
     private function mapConfigToDto(array $config): ConfigDto

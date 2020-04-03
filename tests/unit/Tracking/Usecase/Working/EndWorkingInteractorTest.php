@@ -10,7 +10,7 @@ use Tracking\Repository\WorkingTimeInMemoryRepository;
 use Tracking\Usecase\ResultCodes;
 
 /**
- * @author Alexej Beirith <alexej.beirith@arvato.com>
+ * @author <fatal.error.27@gmail.com>
  */
 class EndWorkingInteractorTest extends TestCase
 {
@@ -47,9 +47,8 @@ class EndWorkingInteractorTest extends TestCase
 
     /**
      * @dataProvider requestValidationParameter
-     *
-     * @param Request   $request
-     * @param int       $expectedErrorCode
+     * @param Request $request
+     * @param int $expectedErrorCode
      */
     public function testExecute_ExpectFailedValidation(Request $request, int $expectedErrorCode): void
     {
@@ -78,9 +77,8 @@ class EndWorkingInteractorTest extends TestCase
 
     /**
      * @dataProvider exceptionDataProvider
-     *
-     * @param \Throwable    $exception
-     * @param int           $expectedErrorCode
+     * @param \Throwable $exception
+     * @param int $expectedErrorCode
      */
     public function testExceptionHandling(\Throwable $exception, int $expectedErrorCode): void
     {

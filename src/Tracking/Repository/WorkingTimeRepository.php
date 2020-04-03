@@ -6,7 +6,7 @@ use Tracking\Dtos\WorkingDayDto;
 use Tracking\Dtos\WorkingWeekDto;
 
 /**
- * @author  Alexej Beirith <alexej.beirith@arvato.com>
+ * @author  <fatal.error.27@gmail.com>
  */
 interface WorkingTimeRepository
 {
@@ -17,14 +17,12 @@ interface WorkingTimeRepository
 
     /**
      * @param array $day
-     *
      * @return WorkingWeekDto[]
      */
     public function startWorking(array $day): array;
 
     /**
      * @param array $day
-     *
      * @return WorkingWeekDto[]
      */
     public function endWorking(array $day): array;
@@ -32,21 +30,18 @@ interface WorkingTimeRepository
     /**
      * @param array $days
      * @param int   $mode
-     *
      * @return WorkingWeekDto[]
      */
     public function setNonWorkingNote(array $days, int $mode): array;
 
     /**
      * @param string $date
-     *
      * @return WorkingDayDto
      */
     public function getWorkingDayByDate(string $date): WorkingDayDto;
 
     /**
      * @param array $day
-     *
      * @return array
      */
     public function updateWorkingDayByDate(array $day): array;

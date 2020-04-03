@@ -13,7 +13,7 @@ use Tracking\Usecase\ResultCodes;
 use Tracking\Usecase\Working\WorkingBasic;
 
 /**
- * @author Alexej Beirith <alexej.beirith@arvato.com>
+ * @author <fatal.error.27@gmail.com>
  */
 class AddOverTimeInteractor
 {
@@ -32,7 +32,7 @@ class AddOverTimeInteractor
 
     /**
      * @param TimeAccountRepository $timeAccountRepository
-     * @param ConfigRepository      $configRepository
+     * @param ConfigRepository $configRepository
      * @param WorkingTimeRepository $workingTimeRepository
      */
     public function __construct(
@@ -47,7 +47,6 @@ class AddOverTimeInteractor
 
     /**
      * @param Request $request
-     *
      * @return TimeAccountBasicResponse
      */
     public function execute(Request $request): TimeAccountBasicResponse
@@ -71,7 +70,6 @@ class AddOverTimeInteractor
 
     /**
      * @param Request $request
-     *
      * @throws InvalidArgumentException
      */
     private function validateRequest(Request $request): void
@@ -89,7 +87,6 @@ class AddOverTimeInteractor
 
     /**
      * @param Request $request
-     *
      * @return array
      */
     private function getParamsFromRequest(Request $request): array
@@ -114,14 +111,13 @@ class AddOverTimeInteractor
             'overtime' => $overtime,
             'weekNr' => (int)$date->format('W'),
             'weekday' => $date->format('l'),
-            'date' => '21.05.2018'
+            'date' => '21.05.2018',
 //            'date' => $date->format(WorkingBasic::DEFAULT_DATE_FORMAT)
         ];
     }
 
     /**
      * @param string $fullWorkingTimePerDay
-     *
      * @return string
      */
     private function calculateHalfWorkingTimeBasedOnDefaultWorkingTimePerDay(string $fullWorkingTimePerDay): string
@@ -136,7 +132,6 @@ class AddOverTimeInteractor
 
     /**
      * @param array $list
-     *
      * @return int
      */
     private function getDatabaseIdFromList(array $list): int

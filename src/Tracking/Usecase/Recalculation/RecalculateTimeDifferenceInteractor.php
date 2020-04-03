@@ -10,7 +10,7 @@ use Tracking\Services\TimeDifferenceCalculationService;
 use Tracking\Usecase\ResultCodes;
 
 /**
- * @author Alexej Beirith <alexej.beirith@arvato.com>
+ * @author <fatal.error.27@gmail.com>
  */
 class RecalculateTimeDifferenceInteractor
 {
@@ -63,7 +63,6 @@ class RecalculateTimeDifferenceInteractor
 
     /**
      * @param WorkingDayDto $workingDay
-     *
      * @return bool
      */
     private function isAllowed(WorkingDayDto $workingDay): bool

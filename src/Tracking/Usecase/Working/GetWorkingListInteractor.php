@@ -5,7 +5,7 @@ namespace Tracking\Usecase\Working;
 use Tracking\Usecase\ResultCodes;
 
 /**
- * @author  Alexej Beirith <alexej.beirith@arvato.com>
+ * @author  <fatal.error.27@gmail.com>
  */
 class GetWorkingListInteractor extends WorkingBasic
 {

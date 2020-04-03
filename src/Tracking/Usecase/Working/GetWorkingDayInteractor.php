@@ -8,13 +8,12 @@ use Tracking\Usecase\ResultCodes;
 use Tracking\Usecase\Working\WorkingBasic;
 
 /**
- * @author  Alexej Beirith <alexej.beirith@arvato.com>
+ * @author  <fatal.error.27@gmail.com>
  */
 class GetWorkingDayInteractor extends WorkingBasic
 {
     /**
      * @param Request $request
-     *
      * @return GetWorkingDayResponse
      */
     public function execute(Request $request): GetWorkingDayResponse
@@ -39,8 +38,7 @@ class GetWorkingDayInteractor extends WorkingBasic
 
     /**
      * @param Request $request
-     *
-     * @throws InvalidArgumentException
+      * @throws InvalidArgumentException
      */
     private function validateRequest(Request $request): void
     {

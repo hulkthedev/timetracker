@@ -8,7 +8,7 @@ use Tracking\Dtos\OvertimeDto;
 use Tracking\Dtos\TimeAccountDto;
 
 /**
- * @author Alexej Beirith <alexej.beirith@arvato.com>
+ * @author <fatal.error.27@gmail.com>
  */
 class TimeAccountSQLiteRepository extends SQLiteRepositoryAbstract implements TimeAccountRepository
 {
@@ -60,9 +60,7 @@ class TimeAccountSQLiteRepository extends SQLiteRepositoryAbstract implements Ti
     /**
      * @param array $data
      * @param int $id
-     *
      * @return TimeAccountDto
-     *
      * @throws PDOException
      */
     public function add(array $data, int $id): TimeAccountDto
@@ -85,7 +83,6 @@ class TimeAccountSQLiteRepository extends SQLiteRepositoryAbstract implements Ti
 
     /**
      * @param array $entries
-     *
      * @return TimeAccountDto
      */
     private function mapEntriesToDto(array $entries): TimeAccountDto

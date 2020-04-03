@@ -3,7 +3,7 @@
 namespace Tracking\Dtos;
 
 /**
- * @author  Alexej Beirith <alexej.beirith@arvato.com>
+ * @author  <fatal.error.27@gmail.com>
  */
 class ConfigDtoStub extends ConfigDto
 {

@@ -5,7 +5,7 @@ namespace Tracking\Repository;
 use Exception;
 
 /**
- * @author Alexej Beirith <alexej.beirith@arvato.com>
+ * @author <fatal.error.27@gmail.com>
  */
 abstract class SQLiteRepositoryAbstract
 {
@@ -31,9 +31,6 @@ abstract class SQLiteRepositoryAbstract
         }
     }
 
-    /**
-     *
-     */
     protected function createDirectory(): void
     {
         if (!is_dir(static::DATABASE_DIRECTORY)) {

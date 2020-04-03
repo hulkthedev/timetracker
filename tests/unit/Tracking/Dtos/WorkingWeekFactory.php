@@ -3,13 +3,12 @@
 namespace Tracking\Dtos;
 
 /**
- * @author  Alexej Beirith <alexej.beirith@arvato.com>
+ * @author  <fatal.error.27@gmail.com>
  */
 class WorkingWeekFactory
 {
     /**
      * @param int $weeks
-     *
      * @return array
      */
     public static function factory(int $weeks = 5): array

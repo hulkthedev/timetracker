@@ -10,7 +10,7 @@ use Tracking\Usecase\Config\GetConfigInteractor;
 use Tracking\Usecase\Config\UpdateConfigInteractor;
 
 /**
- * @author Alexej Beirith <alexej.beirith@arvato.com>
+ * @author <fatal.error.27@gmail.com>
  */
 class ConfigController
 {
@@ -39,7 +39,6 @@ class ConfigController
 
     /**
      * @param Request $request
-     *
      * @return JsonResponse
      */
     public function update(Request $request): JsonResponse

@@ -9,7 +9,7 @@ use Tracking\Dtos\WorkingWeekDto;
 use Tracking\Services\TimeCalculationService;
 
 /**
- * @author Alexej Beirith <alexej.beirith@arvato.com>
+ * @author <fatal.error.27@gmail.com>
  */
 class WorkingTimeSQLiteRepository extends SQLiteRepositoryAbstract implements WorkingTimeRepository
 {
@@ -76,9 +76,7 @@ class WorkingTimeSQLiteRepository extends SQLiteRepositoryAbstract implements Wo
 
     /**
      * @param array $day
-     *
      * @return WorkingWeekDto[]
-     *
      * @throws PDOException
      */
     public function startWorking(array $day): array
@@ -106,9 +104,7 @@ class WorkingTimeSQLiteRepository extends SQLiteRepositoryAbstract implements Wo
 
     /**
      * @param array $day
-     *
      * @return WorkingWeekDto[]
-     *
      * @throws PDOException
      */
     public function endWorking(array $day): array
@@ -134,9 +130,7 @@ class WorkingTimeSQLiteRepository extends SQLiteRepositoryAbstract implements Wo
     /**
      * @param array $days
      * @param int   $mode
-     *
      * @return array
-     *
      * @throws PDOException
      */
     public function setNonWorkingNote(array $days, int $mode): array
@@ -166,9 +160,7 @@ class WorkingTimeSQLiteRepository extends SQLiteRepositoryAbstract implements Wo
 
     /**
      * @param string $date
-     *
      * @return WorkingDayDto
-     *
      * @throws PDOException
      */
     public function getWorkingDayByDate(string $date): WorkingDayDto
@@ -190,7 +182,6 @@ class WorkingTimeSQLiteRepository extends SQLiteRepositoryAbstract implements Wo
 
     /**
      * @param array $day
-     *
      * @throws PDOException
      */
     public function updateTimeDifferenceByDate(array $day): void
@@ -212,9 +203,7 @@ class WorkingTimeSQLiteRepository extends SQLiteRepositoryAbstract implements Wo
 
     /**
      * @param array $day
-     *
      * @return array
-     *
      * @throws PDOException
      */
     public function updateWorkingDayByDate(array $day): array
@@ -240,7 +229,6 @@ class WorkingTimeSQLiteRepository extends SQLiteRepositoryAbstract implements Wo
 
     /**
      * @param array $entries
-     *
      * @return WorkingWeekDto[]
      */
     private function mapEntriesToDto(array $entries): array
@@ -291,7 +279,6 @@ class WorkingTimeSQLiteRepository extends SQLiteRepositoryAbstract implements Wo
 
     /**
      * @param array $day
-     *
      * @return WorkingDayDto
      */
     private function mapWorkingDayToDto(array $day): WorkingDayDto

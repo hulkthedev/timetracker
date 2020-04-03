@@ -5,7 +5,7 @@ namespace Tracking\Usecase\Config;
 use Tracking\Dtos\ConfigDto;
 
 /**
- * @author Alexej Beirith <alexej.beirith@arvato.com>
+ * @author <fatal.error.27@gmail.com>
  */
 class ConfigBasicResponse
 {
@@ -19,8 +19,8 @@ class ConfigBasicResponse
     public $workingModes;
 
     /**
-     * @param int               $code
-     * @param ConfigDto|null    $dto
+     * @param int $code
+     * @param ConfigDto|null $dto
      */
     public function __construct(int $code, ConfigDto $dto = null)
     {

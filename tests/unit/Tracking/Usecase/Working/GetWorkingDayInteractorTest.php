@@ -10,7 +10,7 @@ use Tracking\Repository\WorkingTimeInMemoryRepository;
 use Tracking\Usecase\ResultCodes;
 
 /**
- * @author Alexej Beirith <alexej.beirith@arvato.com>
+ * @author <fatal.error.27@gmail.com>
  */
 class GetWorkingDayInteractorTest extends TestCase
 {
@@ -62,9 +62,8 @@ class GetWorkingDayInteractorTest extends TestCase
 
     /**
      * @dataProvider exceptionDataProvider
-     *
-     * @param \Throwable    $exception
-     * @param int           $expectedErrorCode
+     * @param \Throwable $exception
+     * @param int $expectedErrorCode
      */
     public function testExceptionHandling(\Throwable $exception, int $expectedErrorCode): void
     {

@@ -6,7 +6,7 @@ use Tracking\Dtos\WorkingWeekDto;
 use Tracking\Repository\WorkingModes;
 
 /**
- * @author  Alexej Beirith <alexej.beirith@arvato.com>
+ * @author  <fatal.error.27@gmail.com>
  */
 class AnalyticsCalculationService
 {
@@ -63,7 +63,6 @@ class AnalyticsCalculationService
 
     /**
      * @param int $criteria
-     *
      * @return int
      */
     private function count(int $criteria): int

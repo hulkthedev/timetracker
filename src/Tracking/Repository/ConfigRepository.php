@@ -5,7 +5,7 @@ namespace Tracking\Repository;
 use Tracking\Dtos\ConfigDto;
 
 /**
- * @author  Alexej Beirith <alexej.beirith@arvato.com>
+ * @author  <fatal.error.27@gmail.com>
  */
 interface ConfigRepository
 {
@@ -16,7 +16,6 @@ interface ConfigRepository
 
     /**
      * @param array $data
-     *
      * @return ConfigDto
      */
     public function update(array $data): ConfigDto;

@@ -5,7 +5,7 @@ namespace Tracking\Usecase\TimeAccount;
 use Tracking\Dtos\TimeAccountDto;
 
 /**
- * @author Alexej Beirith <alexej.beirith@arvato.com>
+ * @author <fatal.error.27@gmail.com>
  */
 class TimeAccountBasicResponse
 {
@@ -16,8 +16,8 @@ class TimeAccountBasicResponse
     public $timeAccount;
 
     /**
-     * @param int                   $code
-     * @param TimeAccountDto|null   $dto
+     * @param int $code
+     * @param TimeAccountDto|null $dto
      */
     public function __construct(int $code, TimeAccountDto $dto = null)
     {

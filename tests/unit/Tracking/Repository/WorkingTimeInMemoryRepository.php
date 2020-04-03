@@ -7,7 +7,7 @@ use Tracking\Dtos\WorkingDayDto;
 use Tracking\Dtos\WorkingWeekFactory;
 
 /**
- * @author Alexej Beirith <alexej.beirith@arvato.com>
+ * @author <fatal.error.27@gmail.com>
  */
 class WorkingTimeInMemoryRepository extends Spy implements WorkingTimeRepository
 {

@@ -3,7 +3,7 @@
 namespace Tracking\Services;
 
 /**
- * @author Alexej Beirith <alexej.beirith@arvato.com>
+ * @author <fatal.error.27@gmail.com>
  */
 class TimeCalculationService
 {
@@ -14,7 +14,6 @@ class TimeCalculationService
 
     /**
      * @param string $time
-     *
      * @return TimeCalculationService
      */
     public function add(string $time): TimeCalculationService
@@ -30,7 +29,6 @@ class TimeCalculationService
 
     /**
      * @param string $time
-     *
      * @return TimeCalculationService
      */
     public function sub(string $time): TimeCalculationService
@@ -93,7 +91,6 @@ class TimeCalculationService
 
     /**
      * @param string $time
-     *
      * @return int
      */
     public function getMinutesFromTime(string $time): int
@@ -109,7 +106,6 @@ class TimeCalculationService
 
     /**
      * @param int $minutes
-     *
      * @return string
      */
     public function getTimeFromMinutes(int $minutes): string

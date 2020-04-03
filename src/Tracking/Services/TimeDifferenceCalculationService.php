@@ -7,7 +7,7 @@ use Tracking\Dtos\ConfigDto;
 use Tracking\Usecase\Working\WorkingBasic;
 
 /**
- * @author  Alexej Beirith <alexej.beirith@arvato.com>
+ * @author  <fatal.error.27@gmail.com>
  */
 class TimeDifferenceCalculationService
 {
@@ -36,7 +36,6 @@ class TimeDifferenceCalculationService
      * @param string $date
      * @param string $startTime
      * @param string $endTime
-     *
      * @return array
      */
     public function calculate(string $date, string $startTime, string $endTime): array
@@ -78,7 +77,6 @@ class TimeDifferenceCalculationService
 
     /**
      * @param string $time
-     *
      * @return int
      */
     private function getMinutesFromTime(string $time): int
@@ -91,7 +89,6 @@ class TimeDifferenceCalculationService
 
     /**
      * @param int $workingTimeInMinutes
-     *
      * @return bool
      */
     private function isShortWorkingDay(int $workingTimeInMinutes): bool

@@ -11,7 +11,7 @@ use Tracking\Dtos\VacationWorkingDayDtoStub;
 use Tracking\Dtos\WorkingWeekDto;
 
 /**
- * @author  Alexej Beirith <alexej.beirith@arvato.com>
+ * @author  <fatal.error.27@gmail.com>
  */
 class AnalyticsCalculationServiceTest extends TestCase
 {

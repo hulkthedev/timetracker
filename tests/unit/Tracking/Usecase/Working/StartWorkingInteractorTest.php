@@ -11,7 +11,7 @@ use Tracking\Repository\WorkingTimeInMemoryRepository;
 use Tracking\Usecase\ResultCodes;
 
 /**
- * @author  Alexej Beirith <alexej.beirith@arvato.com>
+ * @author  <fatal.error.27@gmail.com>
  */
 class StartWorkingInteractorTest extends TestCase
 {
@@ -41,8 +41,7 @@ class StartWorkingInteractorTest extends TestCase
 
     /**
      * @dataProvider workingModeDataProvider
-     *
-     * @param int   $workingMode
+     * @param int $workingMode
      * @param array $params
      */
     public function testExecute_ExpectCode_CODE_SUCCESS(int $workingMode, array $params): void
@@ -62,7 +61,6 @@ class StartWorkingInteractorTest extends TestCase
 
     /**
      * @dataProvider workingModeDataProvider
-     *
      * @param int $workingMode
      */
     public function testExecute_ExpectInvalidArgumentException(int $workingMode): void
@@ -93,9 +91,8 @@ class StartWorkingInteractorTest extends TestCase
 
     /**
      * @dataProvider exceptionDataProvider
-     *
-     * @param \Throwable    $exception
-     * @param int           $expectedErrorCode
+     * @param \Throwable $exception
+     * @param int $expectedErrorCode
      */
     public function testExceptionHandling(\Throwable $exception, int $expectedErrorCode): void
     {

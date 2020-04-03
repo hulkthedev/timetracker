@@ -9,7 +9,7 @@ use Tracking\Services\AnalyticsCalculationService;
 use Tracking\Usecase\ResultCodes;
 
 /**
- * @author  Alexej Beirith <alexej.beirith@arvato.com>
+ * @author  <fatal.error.27@gmail.com>
  */
 class WorkingBasic
 {
@@ -24,7 +24,7 @@ class WorkingBasic
 
     /**
      * @param WorkingTimeRepository $workingTimeRepository
-     * @param ConfigRepository      $configRepository
+     * @param ConfigRepository $configRepository
      */
     public function __construct(WorkingTimeRepository $workingTimeRepository, ConfigRepository $configRepository)
     {
@@ -34,7 +34,6 @@ class WorkingBasic
 
     /**
      * @param WorkingWeekDto[] $dtoList
-     *
      * @return WorkingBasicResponse
      */
     protected function getSuccessfullyResponse(array $dtoList): WorkingBasicResponse

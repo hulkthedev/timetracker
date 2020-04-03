@@ -5,7 +5,7 @@ namespace Tracking\Repository;
 use Tracking\Dtos\TimeAccountDto;
 
 /**
- * @author  Alexej Beirith <alexej.beirith@arvato.com>
+ * @author  <fatal.error.27@gmail.com>
  */
 interface TimeAccountRepository
 {
@@ -17,7 +17,6 @@ interface TimeAccountRepository
     /**
      * @param array $data
      * @param int   $id
-     *
      * @return TimeAccountDto
      */
     public function add(array $data, int $id): TimeAccountDto;

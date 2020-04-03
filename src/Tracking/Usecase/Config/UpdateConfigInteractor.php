@@ -7,13 +7,12 @@ use Symfony\Component\HttpFoundation\Request;
 use Tracking\Usecase\ResultCodes;
 
 /**
- * @author Alexej Beirith <alexej.beirith@arvato.com>
+ * @author <fatal.error.27@gmail.com>
  */
 class UpdateConfigInteractor extends ConfigBasic
 {
     /**
      * @param Request $request
-     *
      * @return ConfigBasicResponse
      */
     public function execute(Request $request): ConfigBasicResponse
@@ -36,7 +35,6 @@ class UpdateConfigInteractor extends ConfigBasic
 
     /**
      * @param Request $request
-     *
      * @throws InvalidArgumentException
      */
     private function validateRequest(Request $request): void
@@ -50,7 +48,6 @@ class UpdateConfigInteractor extends ConfigBasic
 
     /**
      * @param Request $request
-     *
      * @return array
      */
     private function getParamsFromRequest(Request $request): array

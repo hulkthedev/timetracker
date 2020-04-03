@@ -9,7 +9,7 @@ use Tracking\Repository\WorkingModes;
 use Tracking\Usecase\ResultCodes;
 
 /**
- * @author Alexej Beirith <alexej.beirith@arvato.com>
+ * @author <fatal.error.27@gmail.com>
  */
 class ConfigBasic
 {
@@ -26,9 +26,7 @@ class ConfigBasic
 
     /**
      * @param ConfigDto $config
-     *
      * @return ConfigBasicResponse
-     *
      * @throws ReflectionException
      */
     protected function getSuccessfullyResponse(ConfigDto $config): ConfigBasicResponse
@@ -43,7 +41,6 @@ class ConfigBasic
 
     /**
      * @return array
-     *
      * @throws ReflectionException
      */
     private function getWorkingModes(): array

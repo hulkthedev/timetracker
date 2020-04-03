@@ -5,7 +5,7 @@ namespace Tracking\Dtos;
 use PHPUnit\Framework\TestCase;
 
 /**
- * @author  Alexej Beirith <alexej.beirith@arvato.com>
+ * @author  <fatal.error.27@gmail.com>
  */
 class ConfigDtoTest extends TestCase
 {

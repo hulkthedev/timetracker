@@ -8,7 +8,7 @@ use Tracking\Services\TimeDifferenceCalculationService;
 use Tracking\Usecase\ResultCodes;
 
 /**
- * @author Alexej Beirith <alexej.beirith@arvato.com>
+ * @author <fatal.error.27@gmail.com>
  */
 class RecalculateTimeDifferenceInRealTimeInteractor
 {
@@ -25,7 +25,6 @@ class RecalculateTimeDifferenceInRealTimeInteractor
 
     /**
      * @param Request $request
-     *
      * @return RecalculationBasicResponse
      */
     public function execute(Request $request): RecalculationBasicResponse

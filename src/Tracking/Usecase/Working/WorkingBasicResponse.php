@@ -3,7 +3,7 @@
 namespace Tracking\Usecase\Working;
 
 /**
- * @author  Alexej Beirith <alexej.beirith@arvato.com>
+ * @author  <fatal.error.27@gmail.com>
  */
 class WorkingBasicResponse
 {
@@ -26,7 +26,6 @@ class WorkingBasicResponse
 
     /**
      * @param array $list
-     *
      * @return WorkingBasicResponse
      */
     public function setList(array $list): WorkingBasicResponse
@@ -38,7 +37,6 @@ class WorkingBasicResponse
     /**
      * @param string        $key
      * @param int|string    $value
-     *
      * @return WorkingBasicResponse
      */
     public function addToStatistics(string $key, $value): WorkingBasicResponse

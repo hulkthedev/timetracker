@@ -3,7 +3,7 @@
 namespace Tracking\Repository;
 
 /**
- * @author Alexej Beirith <alexej.beirith@arvato.com>
+ * @author <fatal.error.27@gmail.com>
  */
 class Spy
 {
@@ -12,7 +12,7 @@ class Spy
 
     /**
      * @param string $functionName
-     * @param mixed  $args
+     * @param mixed $args
      */
     protected function logRequest(string $functionName, $args = 'not set'): void
     {
@@ -25,7 +25,6 @@ class Spy
 
     /**
      * @param string $functionName
-     *
      * @return array
      */
     public function getLog(string $functionName = ''): array
