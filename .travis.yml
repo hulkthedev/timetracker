@@ -14,4 +14,4 @@ before_script:
 
 script:
   - phpunit --configuration tests/unit  --coverage-clover=clover.xml --log-junit junit.xml
-  - sonar-scanner -Dsonar.projectKey=$SONAR_PROJECT_KEY -Dsonar.login=$SONAR_TOKEN
+  - sonar-scanner -X -Dsonar.projectKey=$SONAR_PROJECT_KEY -Dsonar.login=$SONAR_TOKEN
