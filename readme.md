@@ -1,6 +1,9 @@
 **Simple Time Tracker**
 ---
 
+**Status**
+    outdated
+
 **Installation**
 
     ./build.sh
