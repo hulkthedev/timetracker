@@ -15,8 +15,4 @@
 
 **WebUI**
 
-    http://docker.local:81/web/
-
-**Helper**
-
-    https://www.zeiterfassungonline.com/umrechner.html
+    localhost:81/web/
