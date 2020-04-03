@@ -20,7 +20,5 @@ before_script:
   - travis_retry composer update ${COMPOSER_FLAGS} --no-interaction --prefer-source
 
 script:
-  - echo "$SONAR_TOKEN"
-  - echo "$SONAR_PROJECT_KEY"
   - phpunit -c tests/unit --coverage-clover=coverage-report.clover --log-junit=test-report.xml
-  - sonar-scanner -X -Dsonar.projectKey=hulkthedev_timetracker -Dsonar.login=eb1cce0c91d60c5c6c82f69e86d265d6a54deec8
+  - sonar-scanner
