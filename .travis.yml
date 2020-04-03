@@ -15,13 +15,11 @@ addons:
 git:
   depth: false
 
-jdk:
-  - oraclejdk8
-
 before_script:
   - travis_retry composer self-update
   - travis_retry composer update ${COMPOSER_FLAGS} --no-interaction --prefer-source
+#  - travis encrypt eb1cce0c91d60c5c6c82f69e86d265d6a54deec8
 
 script:
   - phpunit -c tests/unit --coverage-clover=coverage-report.clover --log-junit=test-report.xml
-  - sonar-scanner -X -Dsonar.projectKey=hulkthedev_timetracker -Dsonar.login=${SONAR_TOKEN}
+  - sonar-scanner -X -Dsonar.projectKey=hulkthedev_timetracker
