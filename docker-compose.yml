@@ -1,4 +1,4 @@
-version: '3'composer update --no-interaction --no-suggest --no-progress
+version: '3'
 services:
   timetracker:
     image: timertracker:latest
