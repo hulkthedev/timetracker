@@ -3,13 +3,6 @@
   "license": "proprietary",
   "type": "project",
   "description": "Time Tracking Service",
-  "authors": [
-    {
-      "name": "Alexej Beirith",
-      "email": "alexej.beirith@arvato.com",
-      "role": "Software Engineer"
-    }
-  ],
   "config": {
     "github-oauth": {
       "github.com": "eebde61363e83c74286f8855b8d331b38ef861a0"
